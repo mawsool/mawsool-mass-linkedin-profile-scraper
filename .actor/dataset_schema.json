@@ -1,0 +1,141 @@
+{
+  "actorSpecification": 1,
+  "title": "LinkedIn URL results",
+  "description": "Raw JSON keeps every source field. Flat view shows export-friendly columns.",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "inputUrl": {
+        "type": "string",
+        "title": "Input LinkedIn URL"
+      },
+      "id": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "LinkedIn slug"
+      },
+      "name": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Name"
+      },
+      "first_name": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "First name"
+      },
+      "last_name": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Last name"
+      },
+      "position": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Headline / position"
+      },
+      "current_company_name": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Current company"
+      },
+      "city": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "City"
+      },
+      "country_code": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Country"
+      },
+      "followers": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "Followers"
+      },
+      "connections": {
+        "type": [
+          "string",
+          "integer",
+          "null"
+        ],
+        "title": "Connections"
+      },
+      "success": {
+        "type": "boolean",
+        "title": "Success"
+      },
+      "error": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "Error"
+      },
+      "checkedAt": {
+        "type": "string",
+        "title": "Checked at"
+      }
+    }
+  },
+  "views": {
+    "flat": {
+      "title": "Flat results",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "name",
+          "position",
+          "current_company_name",
+          "city",
+          "country_code",
+          "followers",
+          "connections",
+          "success",
+          "error",
+          "checkedAt"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "inputUrl": {
+            "label": "LinkedIn URL",
+            "format": "link"
+          },
+          "success": {
+            "label": "Success",
+            "format": "boolean"
+          },
+          "needsUpdate": {
+            "label": "Needs update",
+            "format": "boolean"
+          },
+          "checkedAt": {
+            "label": "Checked at",
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}

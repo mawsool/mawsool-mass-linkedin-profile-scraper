@@ -1,0 +1,30 @@
+{
+  "actorSpecification": 1,
+  "events": {
+    "profile-details": {
+      "title": "Profile details",
+      "description": "One LinkedIn profile URL processed and written to the result dataset.",
+      "isPrimaryEvent": true,
+      "eventTieredPricingUsd": {
+        "FREE": {
+          "tieredEventPriceUsd": 0.0018
+        },
+        "BRONZE": {
+          "tieredEventPriceUsd": 0.00165
+        },
+        "SILVER": {
+          "tieredEventPriceUsd": 0.0015
+        },
+        "GOLD": {
+          "tieredEventPriceUsd": 0.0012
+        },
+        "PLATINUM": {
+          "tieredEventPriceUsd": 0.001
+        },
+        "DIAMOND": {
+          "tieredEventPriceUsd": 0.0008
+        }
+      }
+    }
+  }
+}
