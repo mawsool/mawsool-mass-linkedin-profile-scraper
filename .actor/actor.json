@@ -1,0 +1,38 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "mawsool-mass-linkedin-profile-scraper",
+  "title": "Mass LinkedIn Profile Scraper | Bulk URLs",
+  "description": "Bulk LinkedIn profile details for large URL files. Concurrent, resumable runs with up to 1,000,000 URLs and every field returned by the source API.",
+  "seoTitle": "Mass LinkedIn Profile Scraper for Bulk URLs",
+  "seoDescription": "Bulk LinkedIn profile details for large URL lists. Concurrent resumable runs, up to 1,000,000 URLs, from $1.80 per 1,000.",
+  "categories": [
+    "LEAD_GENERATION",
+    "SOCIAL_MEDIA"
+  ],
+  "version": "1.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 512,
+  "maxMemoryMbytes": 4096,
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 0,
+    "memoryMbytes": 1024
+  },
+  "environmentVariables": {
+    "ACTOR_MODE": "mass",
+    "CHARGE_EVENT": "profile-details",
+    "GUEST_API_KEY": "@mawsoolGuestApiKey"
+  },
+  "meta": {
+    "templateId": "ts-empty",
+    "generatedBy": "Cursor Agent"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "pricing": "./pay_per_event.json",
+  "dockerfile": "../Dockerfile"
+}

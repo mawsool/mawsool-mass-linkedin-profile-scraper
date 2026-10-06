@@ -1,0 +1,25 @@
+{
+  "name": "mawsool-mass-linkedin-profile-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Thin Apify client for Mawsool LinkedIn URL intelligence.",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "apify": "^3.7.0"
+  },
+  "devDependencies": {
+    "@apify/tsconfig": "^0.1.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^6.0.0"
+  },
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:prod": "node dist/main.js",
+    "start:dev": "node --import tsx src/main.ts",
+    "build": "tsc"
+  },
+  "author": "Mawsool",
+  "license": "UNLICENSED"
+}
